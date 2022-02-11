@@ -4,6 +4,7 @@ public with sharing class StringArrayTest {
         for(Integer i=0;i< num;i++) {
             valList.add('Test '+ String.valueOf(i));
         }
+        system.debug('rk:debug valList >>>' + valList);
         return valList;
     }
 }
