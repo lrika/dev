@@ -2,7 +2,7 @@ public with sharing class AccountController {
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts() {
         
-       System.debug('rk:here is the updated testing...');
+       System.debug('rk:update debug log here ...');
         return [
             SELECT Name, AnnualRevenue, Industry
             FROM Account
